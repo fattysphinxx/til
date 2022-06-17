@@ -1,0 +1,9 @@
+1. django 관련해서 class는 pascal case (ex) PascalCase)로 사용하고,  변수,함수 등은 snake case(ex) snake_case)		를 사용하여 코드를 좀 더 규칙적이고 가독성 있게 만들어 주자.
+
+2. ci/cd - 새 버전의 소프트웨어를 제공하기 위해 수행해야할 일련의 단계.
+	ci/cd 파이프라인의 요소
+		build -어플리케이션을 컴파일하는 단계
+		test- 코드를 테스트 하는 당계. 이 단계를 자동화하면 시간을 절약하고 덜 고생해도 됨.
+		Release - 어플리케이션을 리포지토리에 제공하는 단계
+		Deploy(배포) - 코드를 프로덕션에 배포하는 단계
+		Validation & Compliance(검증) - 
