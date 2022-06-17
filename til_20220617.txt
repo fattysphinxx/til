@@ -1,5 +1,10 @@
 1. django 관련해서 class는 pascal case (ex) PascalCase)로 사용하고,  변수,함수 등은 snake case(ex) snake_case)		를 사용하여 코드를 좀 더 규칙적이고 가독성 있게 만들어 주자.
-
+	코드컨벤션
+		- class 이름 : Pascal
+		- 변수, 함수이름 : Snake
+		- 상수(한번 선언하고 바뀌지 않는 값 : 모두 대문자로
+		- list : 복수형으로 표기. number_list도 가능. 반복문 가독성 높임
+		- 함수 네이밍시 어떤 역할을 하는지 표현할 것.
 2. ci/cd - 새 버전의 소프트웨어를 제공하기 위해 수행해야할 일련의 단계.
 	ci/cd 파이프라인의 요소
 		build -어플리케이션을 컴파일하는 단계
