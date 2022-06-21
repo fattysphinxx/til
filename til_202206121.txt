@@ -1,0 +1,22 @@
+#1. binary는 이진이다
+#2. [python] max(), min() 함수
+#    숫자형 자료형 내에서 최댓값, 최솟값을 반환해주는 함수를 말한다.
+#    예제)
+    b = 1
+    c = 2
+    d = 0
+    print(max(b, c, d))
+
+#3. [django][python] 참조, 역참조
+        #참조란?
+            #해당 객체가 다른 객체의 ForeignKey를 가지고 있거나 1:1 관계인 상황에서 참조 하는 것
+        #역참조란?
+            #다른 객체가 ForeignKey를 가지고 있거나 N:N 관계인 상황, 해당 객체를 참조하고 있는 다른 객체를 참조하는 것
+    class People(models.Model):
+        name = models.CharField(default='')
+        age = IntegerField(null=False)
+    class House(models.Model):
+        people = models.ForeignKey(People, on_delete(CASCADE), related_name='house') #people 모델을 불러들임 [참조]
+        rooms = models.IntegerField(null=false, default='')
+    #People의 집을 찾으려면 이렇게 related_name을 활용한 역참조를 사용하면 된다.
+    prefetch_related = People.objects.first().house.all() # 여기서의 house는 역참조를 하기 위한 related_name이다.
