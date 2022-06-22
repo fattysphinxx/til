@@ -1,4 +1,4 @@
-#1. binary는 이진이다
+#1. binary는 이진이다!
 
 
 #2. [python] max(), min() 함수란?
